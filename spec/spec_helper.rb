@@ -24,4 +24,10 @@ unless defined?(SpecHelpers)
   end
 
   require "#{BUILDR_DIR}/spec/spec_helpers.rb"
+
+  module SpecHelpers
+    def runtime_gen_dir(project)
+      project._("target/generated/osgi_runtime")
+    end
+  end
 end

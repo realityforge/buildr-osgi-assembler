@@ -1,6 +1,6 @@
 require 'spec'
 
-DEFAULT_BUILDR_DIR=File.expand_path(File.dirname(__FILE__) + '/../../../../../buildr')
+DEFAULT_BUILDR_DIR=File.expand_path(File.dirname(__FILE__) + '/../../buildr')
 BUILDR_DIR=ENV['BUILDR_DIR'] || DEFAULT_BUILDR_DIR
 
 unless File.exist?("#{BUILDR_DIR}/buildr.gemspec")

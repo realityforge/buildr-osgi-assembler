@@ -1,6 +1,8 @@
+require File.expand_path(File.dirname(__FILE__) + '/lib/buildr/osgi/version.rb')
+
 Gem::Specification.new do |spec|
   spec.name           = 'buildr-osgi-assembler'
-  spec.version        = `git describe`.strip.split('-').first
+  spec.version        = Buildr::OSGi::Version::STRING
   spec.authors        = ['Peter Donald']
   spec.email          = ["peter@realityforge.org"]
   spec.homepage       = "http://github.com/realityforge/buildr-osgi-assembler"

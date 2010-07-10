@@ -9,3 +9,5 @@ This is a Buildr extension for packaging OSGi applications.
 * Add feature for Hibernate 3.5.1
 * Add feature for PaxWeb
 * Document and Test
+* include_bundles should strip dependencies unless they are bundle or jar type.
+  (So projects need not specify bundle to avoid sources/javadocs bundles being included)

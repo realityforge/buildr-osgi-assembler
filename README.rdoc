@@ -11,3 +11,5 @@ This is a Buildr extension for packaging OSGi applications.
 * Document and Test
 * include_bundles should strip dependencies unless they are bundle or jar type.
   (So projects need not specify bundle to avoid sources/javadocs bundles being included)
+* Make either bundles or featuress declare the default set of repositories that dependencies
+  can be downloaded from and define a way that runtime can export it directly

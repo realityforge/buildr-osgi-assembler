@@ -31,6 +31,36 @@ module Buildr
         ]
       end
 
+      def define_ipojo_bundles
+        [
+          Bundle.new('org.apache.felix:org.apache.felix.ipojo:jar:1.6.2', 50)
+        ]
+      end
+
+      def define_ipojo_whiteboard_bundles
+        [
+          Bundle.new('org.apache.felix:org.apache.felix.ipojo.handler.whiteboard:jar:1.4.0', 50)
+        ]
+      end
+
+      def define_ipojo_jmx_bundles
+        [
+          Bundle.new('org.apache.felix:org.apache.felix.ipojo.handler.jmx:jar:1.4.0', 50)
+        ]
+      end
+
+      def define_ipojo_extender_bundles
+        [
+          Bundle.new('org.apache.felix:org.apache.felix.ipojo.handler.extender:jar:1.4.0', 50)
+        ]
+      end
+
+      def define_ipojo_eventadmin_bundles
+        [
+          Bundle.new('org.apache.felix:org.apache.felix.ipojo.handler.eventadmin:jar:1.6.0', 50)
+        ]
+      end
+
       def define_maexo_jmx_bundles
         # The following dependencies are used as part of the JMX management interface.
         # * Unsure on the minimal set.

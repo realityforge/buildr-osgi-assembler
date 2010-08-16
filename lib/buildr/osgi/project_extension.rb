@@ -54,7 +54,7 @@ module Buildr
 
           project.task("build").enhance(["osgi:runtime:generate-config"])
 
-          project.task("osgi:runtime:init" => [gen_task, verify_task]) do |task|
+          project.task("osgi:runtime:init" => ["build", verify_task]) do |task|
             runtime_dir = project.path_to(:target, :osgi_runtime)
             mkdir_p runtime_dir
             cp_r Dir["#{project.osgi.generation_dir}/**"], runtime_dir
